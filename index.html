@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+     <!-- main Style & bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/style.css">
+    <!-- for fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- for animation -->
+    <link rel="stylesheet" href="css/animate.css">
+    <link  rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <!-- for fontawesome -->
+    <script src="https://kit.fontawesome.com/39bd3d6313.js" crossorigin="anonymous"></script>
+    <!-- icon -->
+    <link rel="icon" href="imgs/check list.png">
+    <title>Quiz App</title>
+  </head>
+  <body class="pt-5">
+    <div class="home-page box rounded-3 me-auto ms-auto mt-5 p-5 hide">
+      <h3 class="h1 mb-3">Instructions :</h3>
+      <p class="h5 ">Total Number Of Quations : <span class="total-quiz fs-4 fw-bold"> 5</span></p>
+      <button type="button" class="btn btn-success mt-3">Start Quiz</button>
+
+    </div>
+
+    <div class="quiz box rounded-3 me-auto ms-auto mt-5 p-5">
+       <div class="question-num fs-3 fw-bold pb-3">
+
+       </div>
+       <div class="question-txt my-3">
+
+       </div>
+       <div class="options-answer">
+
+       </div>
+       <div class="next-btn">
+          <button type="button" class="btn btn-success my-3" onclick = "next()">Next</button>
+       </div>
+       <div class="answer-correction">
+
+       </div>
+    </div>
+      <div class="home-result box rounded-3 me-auto ms-auto mt-5 p-5 hide">
+          <p class="h1 text-center"> Quiz Result</p>
+          <table class="me-auto ms-auto my-5 w-100">
+            <tr>
+               <td class="">Total Question</td>
+               <td class=""> <span class="total-question"> 5 </span> </td>
+            </tr>
+            <tr>
+              <td class="">Total Attempt</td>
+              <td class=""> <span class="total-attempt"> 4 </span> </td>
+            </tr>
+            <tr>
+              <td class=""> Correct</td>
+              <td class=""> <span class="total-correct"> 3 </span> </td>
+            </tr>
+            <tr>
+              <td class="">Wrong</td>
+              <td class=""> <span class="total-wrong"> 1 </span> </td>
+            </tr>
+            <tr>
+              <td class="">Percentage</td>
+              <td class=""> <span class="total-percentage"> 60.00% </span> </td>
+            </tr>
+            <tr>
+              <td class="">Your Total Score</td>
+              <td class=""> <span class="total-score"> 3/5 </span> </td>
+            </tr>
+          </table>
+          <div class="btns d-flex justify-content-center align-items-center">
+             <button type="button" class="btn btn-success m-3">Go To Home</button>
+             <button type="button" class="btn btn-success m-3">Try Again</button>
+          </div>
+      </div>
+
+
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- for flatpickr -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script> -->
+    <script src="js/wow.min.js"></script>
+    <script>
+    new WOW().init();
+    </script>
+  </body>
+</html>
